@@ -4,7 +4,7 @@
 
 <h2>Objetivos</h2>
 
- - Buscar um usuário do github, retornando as informações de repositórios, número de seguidores e estrelas. 
+ - Buscar um usuário através da api do github, retornando as informações de repositórios, número de seguidores e estrelas. 
 
 <h2>Ferramentas</h2>
 
