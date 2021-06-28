@@ -30,7 +30,6 @@ import {
         </NumberContainer>
 
         <NumberContainer onClick={() => handleOnclick('/star')}>
-          
           <h1>Starred</h1>
         </NumberContainer>
 
