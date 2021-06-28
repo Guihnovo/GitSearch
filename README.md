@@ -1,6 +1,6 @@
 # GitSearch :mag:
 
-<img src="https://github.com/Guihnovo/GitSearch/blob/master/imageRedm/Perfil.jpg" width="500" height="400"> <img src="https://github.com/Guihnovo/GitSearch/blob/master/imageRedm/Repositórios.jpg" width="500" height="400">
+<img src="https://github.com/Guihnovo/GitSearch/blob/master/imageRedm/Perfil.jpg" width="480" height="400"> <img src="https://github.com/Guihnovo/GitSearch/blob/master/imageRedm/Repositórios.jpg" width="480" height="400">
 
 <h2>Objetivos</h2>
 
