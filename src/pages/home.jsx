@@ -6,7 +6,6 @@ import UserContainer from '../components/userContainer';
 import UserPicture from '../components/userPicture';
 import UserDetail from '../components/userDetail';
 import UserNumbers from '../components/userNumbers';
-// import starContainer from '../components/starContainer';
 
 import { context } from '../context';
 

@@ -27,7 +27,7 @@ const Header = () => {
             ctx.setStar(star.data);
             
         }catch(error) {
-            console.log(error)
+            alert("Perfil não encontrado. Tente novamente")
         }
     }
 

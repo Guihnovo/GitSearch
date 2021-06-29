@@ -7,8 +7,7 @@ export const ContextProvider = props => {
     const [userData, setUserData] = useState({});
     const [repos, setRepos] = useState({});
     const [star, setStar ] = useState({});
-
-    
+ 
     return (
       <context.Provider value={{
         userData,
