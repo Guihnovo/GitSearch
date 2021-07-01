@@ -19,12 +19,12 @@ import {
           <h2>Repositórios</h2>
         </NumberContainer>
         
-        <NumberContainer>
+        <NumberContainer onClick={() => handleOnclick('/followers')}>
           <h1>{props.followers}</h1>
           <h2>Seguidores</h2>
         </NumberContainer>
 
-        <NumberContainer>
+        <NumberContainer onClick={() => handleOnclick('/following')}>
           <h1>{props.following}</h1>
           <h2>Seguindo</h2>
         </NumberContainer>

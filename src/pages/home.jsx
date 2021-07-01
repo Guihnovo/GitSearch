@@ -20,7 +20,7 @@ export default function Home() {
                 {ctx.userData?.name ?
                     <React.Fragment>
                         <UserPicture url={ctx.userData?.avatar_url} alternativeText={ctx.userData?.login}/>
-                        <UserDetail name={ctx.userData?.name} username={ctx.userData?.login} bio={ctx.userData?.bio} />
+                        <UserDetail name={ctx.userData?.name} username={ctx.userData?.login} bio={ctx.userData?.bio} location={ctx.userData?.location}/>
                         <UserNumbers repos={ctx.userData?.public_repos} followers={ctx.userData?.followers} following={ctx.userData?.following} star={ctx.userData?.starred}/>
                     </React.Fragment>
                 : undefined }

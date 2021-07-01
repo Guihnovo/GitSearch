@@ -7,7 +7,7 @@ import { context } from '../context';
 
 const Star = () => {
     const ctx = useContext(context);
-    
+  
     return (
         <Container>
             <StarContainer name={ctx.userData?.name} star={ctx.star} />

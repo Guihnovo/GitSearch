@@ -20,11 +20,15 @@ const Header = () => {
         try {
             const response = await client.get(`/${searchedValue}`);
             const repos = await client.get(`/${searchedValue}/repos`);
-            const star = await client.get(`/${searchedValue}/starred`)
-            
+            const star = await client.get(`/${searchedValue}/starred`);
+            const following = await client.get(`/${searchedValue}/following`);
+            const followers = await client.get(`/${searchedValue}/followers`);
+
             ctx.setUserData(response.data);
             ctx.setRepos(repos.data);
             ctx.setStar(star.data);
+            ctx.setFollowing(following.data)
+            ctx.setFollowers(followers.data)
             
         }catch(error) {
             alert("Perfil não encontrado. Tente novamente")
@@ -37,7 +41,7 @@ const Header = () => {
             <HeaderInputContainer>
                 <HeaderInput value={searchedValue} onChange={e => setSearchedValue(e.target.value)}/>
                 <HeaderSearchButton onClick={getUserData}>
-                    <FiSearch size={20} />
+                    <FiSearch size={20}/>
                 </HeaderSearchButton>
             </HeaderInputContainer>
         </HeaderSection>
