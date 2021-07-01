@@ -21,14 +21,16 @@ const Header = () => {
             const response = await client.get(`/${searchedValue}`);
             const repos = await client.get(`/${searchedValue}/repos`);
             const star = await client.get(`/${searchedValue}/starred`);
-            const following = await client.get(`/${searchedValue}/following`);
             const followers = await client.get(`/${searchedValue}/followers`);
+            const following = await client.get(`/${searchedValue}/following`);
+            
 
             ctx.setUserData(response.data);
             ctx.setRepos(repos.data);
             ctx.setStar(star.data);
-            ctx.setFollowing(following.data)
-            ctx.setFollowers(followers.data)
+            ctx.setFollowers(followers.data);
+            ctx.setFollowing(following.data);
+            
             
         }catch(error) {
             alert("Perfil não encontrado. Tente novamente")
